@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\cloth",
+    "\\src\\constraint",
+    "\\src\\simulation"
+  ],
+  "SelectedNode": "\\src\\simulation\\simulation.cpp",
+  "PreviewInSolutionExplorer": false
+}

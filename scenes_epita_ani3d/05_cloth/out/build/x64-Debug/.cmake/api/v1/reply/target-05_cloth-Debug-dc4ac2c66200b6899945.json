@@ -1,0 +1,2585 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/scenes_epita_ani3d/05_cloth/05_cloth.exe"
+		},
+		{
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/scenes_epita_ani3d/05_cloth/05_cloth.pdb"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"target_link_libraries",
+			"add_definitions",
+			"include",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt",
+			"C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/third_party/CMakeLists.txt",
+			"C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 54,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 86,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 37,
+				"parent" : 0
+			},
+			{
+				"file" : 2,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 10,
+				"parent" : 4
+			},
+			{
+				"file" : 1,
+				"parent" : 5
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 11,
+				"parent" : 6
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 33,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 25,
+				"parent" : 6
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /W4 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   /MP /wd4244 /wd4127 /wd4267 /wd4706 /wd4458 /wd4996 /wd26495 /openmp"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 7,
+					"define" : "IMGUI_IMPL_OPENGL_LOADER_GLAD"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 8,
+					"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/scenes_epita_ani3d/05_cloth/src"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/third_party/precompiled/windows/glfw/include"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				4,
+				12,
+				14,
+				17,
+				19,
+				21,
+				24,
+				31,
+				35,
+				37,
+				41,
+				43,
+				46,
+				49,
+				52,
+				54,
+				56,
+				59,
+				61,
+				63,
+				65,
+				67,
+				69,
+				72,
+				74,
+				76,
+				79,
+				82,
+				84,
+				86,
+				90,
+				93,
+				95,
+				97,
+				99,
+				101,
+				103,
+				105,
+				114,
+				116,
+				118,
+				120,
+				122,
+				124,
+				126,
+				128,
+				131,
+				133,
+				135,
+				137,
+				139,
+				142,
+				144,
+				147,
+				149,
+				151,
+				154,
+				157,
+				159,
+				162,
+				164,
+				166,
+				168,
+				171,
+				173,
+				175,
+				177,
+				180,
+				182,
+				184,
+				188,
+				190,
+				192,
+				194,
+				197,
+				199,
+				203,
+				205,
+				207,
+				208,
+				209,
+				211,
+				214,
+				218,
+				220,
+				222,
+				224,
+				230,
+				232,
+				234,
+				236,
+				237,
+				239
+			]
+		}
+	],
+	"id" : "05_cloth::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/DWIN32 /D_WINDOWS /W4 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "/machine:x64 /debug /INCREMENTAL /subsystem:console",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "C:\\Users\\Hugo\\Documents\\EPITA\\ANI3D\\code_epita_ani3d\\cgp\\library\\third_party\\precompiled\\windows\\glfw\\lib\\glfw3.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "05_cloth",
+	"nameOnDisk" : "05_cloth.exe",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "cgp",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				201
+			]
+		},
+		{
+			"name" : "cgp\\core\\array",
+			"sourceIndexes" : 
+			[
+				2
+			]
+		},
+		{
+			"name" : "cgp\\core\\array\\numarray",
+			"sourceIndexes" : 
+			[
+				3
+			]
+		},
+		{
+			"name" : "cgp\\core\\array\\numarray\\test",
+			"sourceIndexes" : 
+			[
+				4,
+				5
+			]
+		},
+		{
+			"name" : "cgp\\core\\array\\numarray_stack\\implementation",
+			"sourceIndexes" : 
+			[
+				6,
+				7,
+				8,
+				9
+			]
+		},
+		{
+			"name" : "cgp\\core\\array\\numarray_stack",
+			"sourceIndexes" : 
+			[
+				10,
+				11
+			]
+		},
+		{
+			"name" : "cgp\\core\\array\\numarray_stack\\special_types",
+			"sourceIndexes" : 
+			[
+				12,
+				13
+			]
+		},
+		{
+			"name" : "cgp\\core\\array\\numarray_stack\\test",
+			"sourceIndexes" : 
+			[
+				14,
+				15
+			]
+		},
+		{
+			"name" : "cgp\\core\\base",
+			"sourceIndexes" : 
+			[
+				16
+			]
+		},
+		{
+			"name" : "cgp\\core\\base\\basic_types",
+			"sourceIndexes" : 
+			[
+				17,
+				18
+			]
+		},
+		{
+			"name" : "cgp\\core\\base\\error",
+			"sourceIndexes" : 
+			[
+				19,
+				20
+			]
+		},
+		{
+			"name" : "cgp\\core\\base\\rand",
+			"sourceIndexes" : 
+			[
+				21,
+				22
+			]
+		},
+		{
+			"name" : "cgp\\core\\base\\stl",
+			"sourceIndexes" : 
+			[
+				23
+			]
+		},
+		{
+			"name" : "cgp\\core\\base\\string",
+			"sourceIndexes" : 
+			[
+				24,
+				25
+			]
+		},
+		{
+			"name" : "cgp\\core\\base\\types",
+			"sourceIndexes" : 
+			[
+				26
+			]
+		},
+		{
+			"name" : "cgp\\core\\containers",
+			"sourceIndexes" : 
+			[
+				27
+			]
+		},
+		{
+			"name" : "cgp\\core\\containers\\grid",
+			"sourceIndexes" : 
+			[
+				28
+			]
+		},
+		{
+			"name" : "cgp\\core\\containers\\grid\\grid_2D",
+			"sourceIndexes" : 
+			[
+				29
+			]
+		},
+		{
+			"name" : "cgp\\core\\containers\\grid\\grid_3D",
+			"sourceIndexes" : 
+			[
+				30
+			]
+		},
+		{
+			"name" : "cgp\\core\\containers\\grid\\test",
+			"sourceIndexes" : 
+			[
+				31,
+				32
+			]
+		},
+		{
+			"name" : "cgp\\core\\containers\\grid_stack",
+			"sourceIndexes" : 
+			[
+				33
+			]
+		},
+		{
+			"name" : "cgp\\core\\containers\\grid_stack\\grid_stack_2D",
+			"sourceIndexes" : 
+			[
+				34
+			]
+		},
+		{
+			"name" : "cgp\\core\\containers\\grid_stack\\grid_stack_2D\\test",
+			"sourceIndexes" : 
+			[
+				35,
+				36
+			]
+		},
+		{
+			"name" : "cgp\\core\\containers\\image",
+			"sourceIndexes" : 
+			[
+				37,
+				38
+			]
+		},
+		{
+			"name" : "cgp\\core\\containers\\matrix_stack",
+			"sourceIndexes" : 
+			[
+				39,
+				40
+			]
+		},
+		{
+			"name" : "cgp\\core\\containers\\matrix_stack\\special_types\\definition",
+			"sourceIndexes" : 
+			[
+				41,
+				42
+			]
+		},
+		{
+			"name" : "cgp\\core\\containers\\matrix_stack\\special_types\\mat4",
+			"sourceIndexes" : 
+			[
+				43,
+				44
+			]
+		},
+		{
+			"name" : "cgp\\core\\containers\\matrix_stack\\special_types",
+			"sourceIndexes" : 
+			[
+				45
+			]
+		},
+		{
+			"name" : "cgp\\core\\containers\\offset_grid",
+			"sourceIndexes" : 
+			[
+				46,
+				47
+			]
+		},
+		{
+			"name" : "cgp\\core",
+			"sourceIndexes" : 
+			[
+				48
+			]
+		},
+		{
+			"name" : "cgp\\core\\files",
+			"sourceIndexes" : 
+			[
+				49,
+				50
+			]
+		},
+		{
+			"name" : "cgp\\geometry",
+			"sourceIndexes" : 
+			[
+				51
+			]
+		},
+		{
+			"name" : "cgp\\geometry\\interpolation",
+			"sourceIndexes" : 
+			[
+				52,
+				53
+			]
+		},
+		{
+			"name" : "cgp\\geometry\\mat\\functions",
+			"sourceIndexes" : 
+			[
+				54,
+				55
+			]
+		},
+		{
+			"name" : "cgp\\geometry\\mat\\functions\\test",
+			"sourceIndexes" : 
+			[
+				56,
+				57
+			]
+		},
+		{
+			"name" : "cgp\\geometry\\mat",
+			"sourceIndexes" : 
+			[
+				58
+			]
+		},
+		{
+			"name" : "cgp\\geometry\\mat\\mat2",
+			"sourceIndexes" : 
+			[
+				59,
+				60
+			]
+		},
+		{
+			"name" : "cgp\\geometry\\mat\\mat3",
+			"sourceIndexes" : 
+			[
+				61,
+				62
+			]
+		},
+		{
+			"name" : "cgp\\geometry\\mat\\mat4",
+			"sourceIndexes" : 
+			[
+				63,
+				64
+			]
+		},
+		{
+			"name" : "cgp\\geometry\\mat\\test",
+			"sourceIndexes" : 
+			[
+				65,
+				66
+			]
+		},
+		{
+			"name" : "cgp\\geometry\\quaternion",
+			"sourceIndexes" : 
+			[
+				67,
+				68
+			]
+		},
+		{
+			"name" : "cgp\\geometry\\shape\\curve",
+			"sourceIndexes" : 
+			[
+				69,
+				70
+			]
+		},
+		{
+			"name" : "cgp\\geometry\\shape\\implicit",
+			"sourceIndexes" : 
+			[
+				71
+			]
+		},
+		{
+			"name" : "cgp\\geometry\\shape\\implicit\\marching_cube\\helper",
+			"sourceIndexes" : 
+			[
+				72,
+				73
+			]
+		},
+		{
+			"name" : "cgp\\geometry\\shape\\implicit\\marching_cube",
+			"sourceIndexes" : 
+			[
+				74,
+				75
+			]
+		},
+		{
+			"name" : "cgp\\geometry\\shape\\intersection",
+			"sourceIndexes" : 
+			[
+				76,
+				77
+			]
+		},
+		{
+			"name" : "cgp\\geometry\\shape\\mesh\\loader",
+			"sourceIndexes" : 
+			[
+				78
+			]
+		},
+		{
+			"name" : "cgp\\geometry\\shape\\mesh\\loader\\obj",
+			"sourceIndexes" : 
+			[
+				79,
+				80
+			]
+		},
+		{
+			"name" : "cgp\\geometry\\shape\\mesh",
+			"sourceIndexes" : 
+			[
+				81
+			]
+		},
+		{
+			"name" : "cgp\\geometry\\shape\\mesh\\primitive",
+			"sourceIndexes" : 
+			[
+				82,
+				83
+			]
+		},
+		{
+			"name" : "cgp\\geometry\\shape\\mesh\\structure",
+			"sourceIndexes" : 
+			[
+				84,
+				85
+			]
+		},
+		{
+			"name" : "cgp\\geometry\\shape\\noise",
+			"sourceIndexes" : 
+			[
+				86,
+				87
+			]
+		},
+		{
+			"name" : "cgp\\geometry\\shape",
+			"sourceIndexes" : 
+			[
+				88
+			]
+		},
+		{
+			"name" : "cgp\\geometry\\shape\\spatial_domain",
+			"sourceIndexes" : 
+			[
+				89
+			]
+		},
+		{
+			"name" : "cgp\\geometry\\shape\\spatial_domain\\spatial_domain_grid_3D",
+			"sourceIndexes" : 
+			[
+				90,
+				91
+			]
+		},
+		{
+			"name" : "cgp\\geometry\\transform\\affine",
+			"sourceIndexes" : 
+			[
+				92
+			]
+		},
+		{
+			"name" : "cgp\\geometry\\transform\\affine\\affine",
+			"sourceIndexes" : 
+			[
+				93,
+				94
+			]
+		},
+		{
+			"name" : "cgp\\geometry\\transform\\affine\\affine_rt",
+			"sourceIndexes" : 
+			[
+				95,
+				96
+			]
+		},
+		{
+			"name" : "cgp\\geometry\\transform\\affine\\affine_rts",
+			"sourceIndexes" : 
+			[
+				97,
+				98
+			]
+		},
+		{
+			"name" : "cgp\\geometry\\transform\\frame",
+			"sourceIndexes" : 
+			[
+				99,
+				100
+			]
+		},
+		{
+			"name" : "cgp\\geometry\\transform\\projection",
+			"sourceIndexes" : 
+			[
+				101,
+				102
+			]
+		},
+		{
+			"name" : "cgp\\geometry\\transform\\rotation_transform",
+			"sourceIndexes" : 
+			[
+				103,
+				104
+			]
+		},
+		{
+			"name" : "cgp\\geometry\\transform\\rotation_transform\\test",
+			"sourceIndexes" : 
+			[
+				105,
+				106
+			]
+		},
+		{
+			"name" : "cgp\\geometry\\transform",
+			"sourceIndexes" : 
+			[
+				107
+			]
+		},
+		{
+			"name" : "cgp\\geometry\\vec",
+			"sourceIndexes" : 
+			[
+				108
+			]
+		},
+		{
+			"name" : "cgp\\geometry\\vec\\vec2",
+			"sourceIndexes" : 
+			[
+				109
+			]
+		},
+		{
+			"name" : "cgp\\geometry\\vec\\vec3",
+			"sourceIndexes" : 
+			[
+				110
+			]
+		},
+		{
+			"name" : "cgp\\geometry\\vec\\vec4",
+			"sourceIndexes" : 
+			[
+				111
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\camera",
+			"sourceIndexes" : 
+			[
+				112
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\camera\\camera_controller",
+			"sourceIndexes" : 
+			[
+				113
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\camera\\camera_controller\\camera_controller_first_person",
+			"sourceIndexes" : 
+			[
+				114,
+				115
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\camera\\camera_controller\\camera_controller_first_person_euler",
+			"sourceIndexes" : 
+			[
+				116,
+				117
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\camera\\camera_controller\\camera_controller_generic_base",
+			"sourceIndexes" : 
+			[
+				118,
+				119
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\camera\\camera_controller\\camera_controller_orbit",
+			"sourceIndexes" : 
+			[
+				120,
+				121
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\camera\\camera_controller\\camera_controller_orbit_euler",
+			"sourceIndexes" : 
+			[
+				122,
+				123
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\camera\\camera_model\\camera_first_person",
+			"sourceIndexes" : 
+			[
+				124,
+				125
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\camera\\camera_model\\camera_first_person_euler",
+			"sourceIndexes" : 
+			[
+				126,
+				127
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\camera\\camera_model\\camera_generic_base",
+			"sourceIndexes" : 
+			[
+				128,
+				129
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\camera\\camera_model",
+			"sourceIndexes" : 
+			[
+				130
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\camera\\camera_model\\camera_orbit",
+			"sourceIndexes" : 
+			[
+				131,
+				132
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\camera\\camera_model\\camera_orbit_euler",
+			"sourceIndexes" : 
+			[
+				133,
+				134
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\camera\\camera_model\\common_functions",
+			"sourceIndexes" : 
+			[
+				135,
+				136
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\camera\\camera_projection",
+			"sourceIndexes" : 
+			[
+				137,
+				138
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\drawable\\curve_drawable",
+			"sourceIndexes" : 
+			[
+				139,
+				140
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\drawable",
+			"sourceIndexes" : 
+			[
+				141
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\drawable\\environment",
+			"sourceIndexes" : 
+			[
+				142,
+				143
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\drawable\\hierarchy_mesh_drawable",
+			"sourceIndexes" : 
+			[
+				144,
+				145
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\drawable\\material",
+			"sourceIndexes" : 
+			[
+				146
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\drawable\\material\\material_mesh_drawable_phong",
+			"sourceIndexes" : 
+			[
+				147,
+				148
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\drawable\\mesh_drawable",
+			"sourceIndexes" : 
+			[
+				149,
+				150
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\drawable\\special_drawable\\skybox_drawable",
+			"sourceIndexes" : 
+			[
+				151,
+				152
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\drawable\\special_drawable",
+			"sourceIndexes" : 
+			[
+				153
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\drawable\\special_drawable\\trajectory_drawable",
+			"sourceIndexes" : 
+			[
+				154,
+				155
+			]
+		},
+		{
+			"name" : "cgp\\graphics",
+			"sourceIndexes" : 
+			[
+				156
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\imgui",
+			"sourceIndexes" : 
+			[
+				157,
+				158
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\input_devices",
+			"sourceIndexes" : 
+			[
+				159,
+				160
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\opengl\\buffer",
+			"sourceIndexes" : 
+			[
+				161
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\opengl\\buffer\\ebo",
+			"sourceIndexes" : 
+			[
+				162,
+				163
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\opengl\\buffer\\opengl_buffer",
+			"sourceIndexes" : 
+			[
+				164,
+				165
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\opengl\\buffer\\vbo",
+			"sourceIndexes" : 
+			[
+				166,
+				167
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\opengl\\debug",
+			"sourceIndexes" : 
+			[
+				168,
+				169
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\opengl",
+			"sourceIndexes" : 
+			[
+				170
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\opengl\\shaders\\cache_uniform_location",
+			"sourceIndexes" : 
+			[
+				171,
+				172
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\opengl\\shaders",
+			"sourceIndexes" : 
+			[
+				173,
+				174
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\opengl\\texture",
+			"sourceIndexes" : 
+			[
+				175,
+				176
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\opengl\\uniform",
+			"sourceIndexes" : 
+			[
+				177,
+				178
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\picking",
+			"sourceIndexes" : 
+			[
+				179
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\picking\\picking_plane",
+			"sourceIndexes" : 
+			[
+				180,
+				181
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\picking\\picking_spheres",
+			"sourceIndexes" : 
+			[
+				182,
+				183
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\picking\\picking_structure",
+			"sourceIndexes" : 
+			[
+				184,
+				185
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\time",
+			"sourceIndexes" : 
+			[
+				186
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\time\\timer",
+			"sourceIndexes" : 
+			[
+				187
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\time\\timer\\timer_basic",
+			"sourceIndexes" : 
+			[
+				188,
+				189
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\time\\timer\\timer_event_periodic",
+			"sourceIndexes" : 
+			[
+				190,
+				191
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\time\\timer\\timer_fps",
+			"sourceIndexes" : 
+			[
+				192,
+				193
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\time\\timer\\timer_interval",
+			"sourceIndexes" : 
+			[
+				194,
+				195
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\time\\tracker",
+			"sourceIndexes" : 
+			[
+				196
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\time\\tracker\\velocity_tracker",
+			"sourceIndexes" : 
+			[
+				197,
+				198
+			]
+		},
+		{
+			"name" : "cgp\\graphics\\window",
+			"sourceIndexes" : 
+			[
+				199,
+				200
+			]
+		},
+		{
+			"name" : "third_party\\src\\glad\\include\\glad",
+			"sourceIndexes" : 
+			[
+				202
+			]
+		},
+		{
+			"name" : "third_party\\src\\glad\\src",
+			"sourceIndexes" : 
+			[
+				203
+			]
+		},
+		{
+			"name" : "third_party\\src\\imgui",
+			"sourceIndexes" : 
+			[
+				204,
+				205,
+				206,
+				207,
+				208,
+				209,
+				210,
+				211,
+				212,
+				213,
+				214,
+				215,
+				216,
+				217
+			]
+		},
+		{
+			"name" : "third_party\\src\\jpeg",
+			"sourceIndexes" : 
+			[
+				218,
+				219,
+				220,
+				221
+			]
+		},
+		{
+			"name" : "third_party\\src\\lodepng",
+			"sourceIndexes" : 
+			[
+				222,
+				223
+			]
+		},
+		{
+			"name" : "third_party\\src\\simplexnoise",
+			"sourceIndexes" : 
+			[
+				224,
+				225
+			]
+		},
+		{
+			"name" : "shaders\\mesh",
+			"sourceIndexes" : 
+			[
+				226,
+				227
+			]
+		},
+		{
+			"name" : "shaders\\single_color",
+			"sourceIndexes" : 
+			[
+				228,
+				229
+			]
+		},
+		{
+			"name" : "src\\cloth",
+			"sourceIndexes" : 
+			[
+				230,
+				231
+			]
+		},
+		{
+			"name" : "src\\constraint",
+			"sourceIndexes" : 
+			[
+				232,
+				233
+			]
+		},
+		{
+			"name" : "src",
+			"sourceIndexes" : 
+			[
+				234,
+				235,
+				236,
+				237,
+				238
+			]
+		},
+		{
+			"name" : "src\\simulation",
+			"sourceIndexes" : 
+			[
+				239,
+				240
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/cgp.hpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/cgp_debug.hpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/array/array.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/array/numarray/numarray.hpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/array/numarray/test/test_numarray.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/array/numarray/test/test_numarray.hpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack.hpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/array/numarray_stack/numarray_stack.hpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/array/numarray_stack/numarray_stack_fwd.hpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/array/numarray_stack/special_types/special_types.cpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/array/numarray_stack/special_types/special_types.hpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/array/numarray_stack/test/test_numarray_stack.cpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/array/numarray_stack/test/test_numarray_stack.hpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/base/base.hpp",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/base/basic_types/basic_types.cpp",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/base/basic_types/basic_types.hpp",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/base/error/error.cpp",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/base/error/error.hpp",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/base/rand/rand.cpp",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/base/rand/rand.hpp",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/base/stl/stl.hpp",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/base/string/string.cpp",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/base/string/string.hpp",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/base/types/types.hpp",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/containers/containers.hpp",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/containers/grid/grid.hpp",
+			"sourceGroupIndex" : 16
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/containers/grid/grid_2D/grid_2D.hpp",
+			"sourceGroupIndex" : 17
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/containers/grid/grid_3D/grid_3D.hpp",
+			"sourceGroupIndex" : 18
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/containers/grid/test/test_grid.cpp",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/containers/grid/test/test_grid.hpp",
+			"sourceGroupIndex" : 19
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/containers/grid_stack/grid_stack.hpp",
+			"sourceGroupIndex" : 20
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/containers/grid_stack/grid_stack_2D/grid_stack_2D.hpp",
+			"sourceGroupIndex" : 21
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/containers/grid_stack/grid_stack_2D/test/test_grid_stack_2D.cpp",
+			"sourceGroupIndex" : 22
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/containers/grid_stack/grid_stack_2D/test/test_grid_stack_2D.hpp",
+			"sourceGroupIndex" : 22
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/containers/image/image.cpp",
+			"sourceGroupIndex" : 23
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/containers/image/image.hpp",
+			"sourceGroupIndex" : 23
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/containers/matrix_stack/matrix_stack.hpp",
+			"sourceGroupIndex" : 24
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/containers/matrix_stack/matrix_stack_fwd.hpp",
+			"sourceGroupIndex" : 24
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/containers/matrix_stack/special_types/definition/special_types.cpp",
+			"sourceGroupIndex" : 25
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/containers/matrix_stack/special_types/definition/special_types.hpp",
+			"sourceGroupIndex" : 25
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/containers/matrix_stack/special_types/mat4/mat4.cpp",
+			"sourceGroupIndex" : 26
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/containers/matrix_stack/special_types/mat4/mat4.hpp",
+			"sourceGroupIndex" : 26
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/containers/matrix_stack/special_types/special_types.hpp",
+			"sourceGroupIndex" : 27
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/containers/offset_grid/offset_grid.cpp",
+			"sourceGroupIndex" : 28
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/containers/offset_grid/offset_grid.hpp",
+			"sourceGroupIndex" : 28
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/core.hpp",
+			"sourceGroupIndex" : 29
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/files/files.cpp",
+			"sourceGroupIndex" : 30
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/core/files/files.hpp",
+			"sourceGroupIndex" : 30
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/geometry.hpp",
+			"sourceGroupIndex" : 31
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/interpolation/interpolation.cpp",
+			"sourceGroupIndex" : 32
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/interpolation/interpolation.hpp",
+			"sourceGroupIndex" : 32
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/mat/functions/mat_functions.cpp",
+			"sourceGroupIndex" : 33
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/mat/functions/mat_functions.hpp",
+			"sourceGroupIndex" : 33
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/mat/functions/test/test_vec_mat.cpp",
+			"sourceGroupIndex" : 34
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/mat/functions/test/test_vec_mat.hpp",
+			"sourceGroupIndex" : 34
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/mat/mat.hpp",
+			"sourceGroupIndex" : 35
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/mat/mat2/mat2.cpp",
+			"sourceGroupIndex" : 36
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/mat/mat2/mat2.hpp",
+			"sourceGroupIndex" : 36
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/mat/mat3/mat3.cpp",
+			"sourceGroupIndex" : 37
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/mat/mat3/mat3.hpp",
+			"sourceGroupIndex" : 37
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/mat/mat4/mat4.cpp",
+			"sourceGroupIndex" : 38
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/mat/mat4/mat4.hpp",
+			"sourceGroupIndex" : 38
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/mat/test/test_matrix_stack.cpp",
+			"sourceGroupIndex" : 39
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/mat/test/test_matrix_stack.hpp",
+			"sourceGroupIndex" : 39
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/quaternion/quaternion.cpp",
+			"sourceGroupIndex" : 40
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/quaternion/quaternion.hpp",
+			"sourceGroupIndex" : 40
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/shape/curve/curve.cpp",
+			"sourceGroupIndex" : 41
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/shape/curve/curve.hpp",
+			"sourceGroupIndex" : 41
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/shape/implicit/implicit.hpp",
+			"sourceGroupIndex" : 42
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/shape/implicit/marching_cube/helper/marching_cubes_lut.cpp",
+			"sourceGroupIndex" : 43
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/shape/implicit/marching_cube/helper/marching_cubes_lut.hpp",
+			"sourceGroupIndex" : 43
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/shape/implicit/marching_cube/marching_cube.cpp",
+			"sourceGroupIndex" : 44
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/shape/implicit/marching_cube/marching_cube.hpp",
+			"sourceGroupIndex" : 44
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/shape/intersection/intersection.cpp",
+			"sourceGroupIndex" : 45
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/shape/intersection/intersection.hpp",
+			"sourceGroupIndex" : 45
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/shape/mesh/loader/loader.hpp",
+			"sourceGroupIndex" : 46
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/shape/mesh/loader/obj/obj.cpp",
+			"sourceGroupIndex" : 47
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/shape/mesh/loader/obj/obj.hpp",
+			"sourceGroupIndex" : 47
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/shape/mesh/mesh.hpp",
+			"sourceGroupIndex" : 48
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/shape/mesh/primitive/mesh_primitive.cpp",
+			"sourceGroupIndex" : 49
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/shape/mesh/primitive/mesh_primitive.hpp",
+			"sourceGroupIndex" : 49
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/shape/mesh/structure/mesh.cpp",
+			"sourceGroupIndex" : 50
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/shape/mesh/structure/mesh.hpp",
+			"sourceGroupIndex" : 50
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/shape/noise/noise.cpp",
+			"sourceGroupIndex" : 51
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/shape/noise/noise.hpp",
+			"sourceGroupIndex" : 51
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/shape/shape.hpp",
+			"sourceGroupIndex" : 52
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/shape/spatial_domain/spatial_domain.hpp",
+			"sourceGroupIndex" : 53
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/shape/spatial_domain/spatial_domain_grid_3D/spatial_domain_grid_3D.cpp",
+			"sourceGroupIndex" : 54
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/shape/spatial_domain/spatial_domain_grid_3D/spatial_domain_grid_3D.hpp",
+			"sourceGroupIndex" : 54
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/transform/affine/affine.hpp",
+			"sourceGroupIndex" : 55
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/transform/affine/affine/affine.cpp",
+			"sourceGroupIndex" : 56
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/transform/affine/affine/affine.hpp",
+			"sourceGroupIndex" : 56
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/transform/affine/affine_rt/affine_rt.cpp",
+			"sourceGroupIndex" : 57
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/transform/affine/affine_rt/affine_rt.hpp",
+			"sourceGroupIndex" : 57
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/transform/affine/affine_rts/affine_rts.cpp",
+			"sourceGroupIndex" : 58
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/transform/affine/affine_rts/affine_rts.hpp",
+			"sourceGroupIndex" : 58
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/transform/frame/frame.cpp",
+			"sourceGroupIndex" : 59
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/transform/frame/frame.hpp",
+			"sourceGroupIndex" : 59
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/transform/projection/projection.cpp",
+			"sourceGroupIndex" : 60
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/transform/projection/projection.hpp",
+			"sourceGroupIndex" : 60
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/transform/rotation_transform/rotation_transform.cpp",
+			"sourceGroupIndex" : 61
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/transform/rotation_transform/rotation_transform.hpp",
+			"sourceGroupIndex" : 61
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/transform/rotation_transform/test/test_rotation.cpp",
+			"sourceGroupIndex" : 62
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/transform/rotation_transform/test/test_rotation.hpp",
+			"sourceGroupIndex" : 62
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/transform/transform.hpp",
+			"sourceGroupIndex" : 63
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/vec/vec.hpp",
+			"sourceGroupIndex" : 64
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/vec/vec2/vec2.hpp",
+			"sourceGroupIndex" : 65
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/vec/vec3/vec3.hpp",
+			"sourceGroupIndex" : 66
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/geometry/vec/vec4/vec4.hpp",
+			"sourceGroupIndex" : 67
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/camera/camera.hpp",
+			"sourceGroupIndex" : 68
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/camera/camera_controller/camera_controller.hpp",
+			"sourceGroupIndex" : 69
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/camera/camera_controller/camera_controller_first_person/camera_controller_first_person.cpp",
+			"sourceGroupIndex" : 70
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/camera/camera_controller/camera_controller_first_person/camera_controller_first_person.hpp",
+			"sourceGroupIndex" : 70
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/camera/camera_controller/camera_controller_first_person_euler/camera_controller_first_person_euler.cpp",
+			"sourceGroupIndex" : 71
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/camera/camera_controller/camera_controller_first_person_euler/camera_controller_first_person_euler.hpp",
+			"sourceGroupIndex" : 71
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/camera/camera_controller/camera_controller_generic_base/camera_controller_generic_base.cpp",
+			"sourceGroupIndex" : 72
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/camera/camera_controller/camera_controller_generic_base/camera_controller_generic_base.hpp",
+			"sourceGroupIndex" : 72
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/camera/camera_controller/camera_controller_orbit/camera_controller_orbit.cpp",
+			"sourceGroupIndex" : 73
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/camera/camera_controller/camera_controller_orbit/camera_controller_orbit.hpp",
+			"sourceGroupIndex" : 73
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/camera/camera_controller/camera_controller_orbit_euler/camera_controller_orbit_euler.cpp",
+			"sourceGroupIndex" : 74
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/camera/camera_controller/camera_controller_orbit_euler/camera_controller_orbit_euler.hpp",
+			"sourceGroupIndex" : 74
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/camera/camera_model/camera_first_person/camera_first_person.cpp",
+			"sourceGroupIndex" : 75
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/camera/camera_model/camera_first_person/camera_first_person.hpp",
+			"sourceGroupIndex" : 75
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/camera/camera_model/camera_first_person_euler/camera_first_person_euler.cpp",
+			"sourceGroupIndex" : 76
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/camera/camera_model/camera_first_person_euler/camera_first_person_euler.hpp",
+			"sourceGroupIndex" : 76
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/camera/camera_model/camera_generic_base/camera_generic_base.cpp",
+			"sourceGroupIndex" : 77
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/camera/camera_model/camera_generic_base/camera_generic_base.hpp",
+			"sourceGroupIndex" : 77
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/camera/camera_model/camera_model.hpp",
+			"sourceGroupIndex" : 78
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/camera/camera_model/camera_orbit/camera_orbit.cpp",
+			"sourceGroupIndex" : 79
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/camera/camera_model/camera_orbit/camera_orbit.hpp",
+			"sourceGroupIndex" : 79
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/camera/camera_model/camera_orbit_euler/camera_orbit_euler.cpp",
+			"sourceGroupIndex" : 80
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/camera/camera_model/camera_orbit_euler/camera_orbit_euler.hpp",
+			"sourceGroupIndex" : 80
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/camera/camera_model/common_functions/common_functions.cpp",
+			"sourceGroupIndex" : 81
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/camera/camera_model/common_functions/common_functions.hpp",
+			"sourceGroupIndex" : 81
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/camera/camera_projection/camera_projection.cpp",
+			"sourceGroupIndex" : 82
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/camera/camera_projection/camera_projection.hpp",
+			"sourceGroupIndex" : 82
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/drawable/curve_drawable/curve_drawable.cpp",
+			"sourceGroupIndex" : 83
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/drawable/curve_drawable/curve_drawable.hpp",
+			"sourceGroupIndex" : 83
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/drawable/drawable.hpp",
+			"sourceGroupIndex" : 84
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/drawable/environment/environment.cpp",
+			"sourceGroupIndex" : 85
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/drawable/environment/environment.hpp",
+			"sourceGroupIndex" : 85
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/drawable/hierarchy_mesh_drawable/hierarchy_mesh_drawable.cpp",
+			"sourceGroupIndex" : 86
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/drawable/hierarchy_mesh_drawable/hierarchy_mesh_drawable.hpp",
+			"sourceGroupIndex" : 86
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/drawable/material/material.hpp",
+			"sourceGroupIndex" : 87
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/drawable/material/material_mesh_drawable_phong/material_mesh_drawable_phong.cpp",
+			"sourceGroupIndex" : 88
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/drawable/material/material_mesh_drawable_phong/material_mesh_drawable_phong.hpp",
+			"sourceGroupIndex" : 88
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/drawable/mesh_drawable/mesh_drawable.cpp",
+			"sourceGroupIndex" : 89
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/drawable/mesh_drawable/mesh_drawable.hpp",
+			"sourceGroupIndex" : 89
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/drawable/special_drawable/skybox_drawable/skybox_drawable.cpp",
+			"sourceGroupIndex" : 90
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/drawable/special_drawable/skybox_drawable/skybox_drawable.hpp",
+			"sourceGroupIndex" : 90
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/drawable/special_drawable/special_drawable.hpp",
+			"sourceGroupIndex" : 91
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/drawable/special_drawable/trajectory_drawable/trajectory_drawable.cpp",
+			"sourceGroupIndex" : 92
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/drawable/special_drawable/trajectory_drawable/trajectory_drawable.hpp",
+			"sourceGroupIndex" : 92
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/graphics.hpp",
+			"sourceGroupIndex" : 93
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/imgui/imgui.cpp",
+			"sourceGroupIndex" : 94
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/imgui/imgui.hpp",
+			"sourceGroupIndex" : 94
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/input_devices/input_devices.cpp",
+			"sourceGroupIndex" : 95
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/input_devices/input_devices.hpp",
+			"sourceGroupIndex" : 95
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/opengl/buffer/buffer.hpp",
+			"sourceGroupIndex" : 96
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/opengl/buffer/ebo/ebo.cpp",
+			"sourceGroupIndex" : 97
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/opengl/buffer/ebo/ebo.hpp",
+			"sourceGroupIndex" : 97
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/opengl/buffer/opengl_buffer/opengl_buffer.cpp",
+			"sourceGroupIndex" : 98
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/opengl/buffer/opengl_buffer/opengl_buffer.hpp",
+			"sourceGroupIndex" : 98
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/opengl/buffer/vbo/vbo.cpp",
+			"sourceGroupIndex" : 99
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/opengl/buffer/vbo/vbo.hpp",
+			"sourceGroupIndex" : 99
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/opengl/debug/debug.cpp",
+			"sourceGroupIndex" : 100
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/opengl/debug/debug.hpp",
+			"sourceGroupIndex" : 100
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/opengl/opengl.hpp",
+			"sourceGroupIndex" : 101
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/opengl/shaders/cache_uniform_location/cache_uniform_location.cpp",
+			"sourceGroupIndex" : 102
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/opengl/shaders/cache_uniform_location/cache_uniform_location.hpp",
+			"sourceGroupIndex" : 102
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/opengl/shaders/shaders.cpp",
+			"sourceGroupIndex" : 103
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/opengl/shaders/shaders.hpp",
+			"sourceGroupIndex" : 103
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/opengl/texture/texture.cpp",
+			"sourceGroupIndex" : 104
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/opengl/texture/texture.hpp",
+			"sourceGroupIndex" : 104
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/opengl/uniform/uniform.cpp",
+			"sourceGroupIndex" : 105
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/opengl/uniform/uniform.hpp",
+			"sourceGroupIndex" : 105
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/picking/picking.hpp",
+			"sourceGroupIndex" : 106
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/picking/picking_plane/picking_plane.cpp",
+			"sourceGroupIndex" : 107
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/picking/picking_plane/picking_plane.hpp",
+			"sourceGroupIndex" : 107
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/picking/picking_spheres/picking_spheres.cpp",
+			"sourceGroupIndex" : 108
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/picking/picking_spheres/picking_spheres.hpp",
+			"sourceGroupIndex" : 108
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/picking/picking_structure/picking_structure.cpp",
+			"sourceGroupIndex" : 109
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/picking/picking_structure/picking_structure.hpp",
+			"sourceGroupIndex" : 109
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/time/time.hpp",
+			"sourceGroupIndex" : 110
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/time/timer/timer.hpp",
+			"sourceGroupIndex" : 111
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/time/timer/timer_basic/timer_basic.cpp",
+			"sourceGroupIndex" : 112
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/time/timer/timer_basic/timer_basic.hpp",
+			"sourceGroupIndex" : 112
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/time/timer/timer_event_periodic/timer_event_periodic.cpp",
+			"sourceGroupIndex" : 113
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/time/timer/timer_event_periodic/timer_event_periodic.hpp",
+			"sourceGroupIndex" : 113
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/time/timer/timer_fps/timer_fps.cpp",
+			"sourceGroupIndex" : 114
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/time/timer/timer_fps/timer_fps.hpp",
+			"sourceGroupIndex" : 114
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/time/timer/timer_interval/timer_interval.cpp",
+			"sourceGroupIndex" : 115
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/time/timer/timer_interval/timer_interval.hpp",
+			"sourceGroupIndex" : 115
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/time/tracker/tracker.hpp",
+			"sourceGroupIndex" : 116
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/time/tracker/velocity_tracker/velocity_tracker.cpp",
+			"sourceGroupIndex" : 117
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/time/tracker/velocity_tracker/velocity_tracker.hpp",
+			"sourceGroupIndex" : 117
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/window/window.cpp",
+			"sourceGroupIndex" : 118
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/graphics/window/window.hpp",
+			"sourceGroupIndex" : 118
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/cgp/opengl_include.hpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/third_party/src/glad/include/glad/glad.hpp",
+			"sourceGroupIndex" : 119
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/third_party/src/glad/src/glad.cpp",
+			"sourceGroupIndex" : 120
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/third_party/src/imgui/imconfig.h",
+			"sourceGroupIndex" : 121
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/third_party/src/imgui/imgui.cpp",
+			"sourceGroupIndex" : 121
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/third_party/src/imgui/imgui.h",
+			"sourceGroupIndex" : 121
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/third_party/src/imgui/imgui_demo.cpp",
+			"sourceGroupIndex" : 121
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/third_party/src/imgui/imgui_draw.cpp",
+			"sourceGroupIndex" : 121
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/third_party/src/imgui/imgui_impl_glfw.cpp",
+			"sourceGroupIndex" : 121
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/third_party/src/imgui/imgui_impl_glfw.h",
+			"sourceGroupIndex" : 121
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/third_party/src/imgui/imgui_impl_opengl3.cpp",
+			"sourceGroupIndex" : 121
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/third_party/src/imgui/imgui_impl_opengl3.h",
+			"sourceGroupIndex" : 121
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/third_party/src/imgui/imgui_internal.h",
+			"sourceGroupIndex" : 121
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/third_party/src/imgui/imgui_widgets.cpp",
+			"sourceGroupIndex" : 121
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/third_party/src/imgui/imstb_rectpack.h",
+			"sourceGroupIndex" : 121
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/third_party/src/imgui/imstb_textedit.h",
+			"sourceGroupIndex" : 121
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/third_party/src/imgui/imstb_truetype.h",
+			"sourceGroupIndex" : 121
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/third_party/src/jpeg/jpgd.cpp",
+			"sourceGroupIndex" : 122
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/third_party/src/jpeg/jpgd.h",
+			"sourceGroupIndex" : 122
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/third_party/src/jpeg/jpge.cpp",
+			"sourceGroupIndex" : 122
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/third_party/src/jpeg/jpge.h",
+			"sourceGroupIndex" : 122
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/third_party/src/lodepng/lodepng.cpp",
+			"sourceGroupIndex" : 123
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/third_party/src/lodepng/lodepng.h",
+			"sourceGroupIndex" : 123
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/third_party/src/simplexnoise/simplexnoise1234.cpp",
+			"sourceGroupIndex" : 124
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/cgp/library/third_party/src/simplexnoise/simplexnoise1234.hpp",
+			"sourceGroupIndex" : 124
+		},
+		{
+			"backtrace" : 1,
+			"path" : "shaders/mesh/frag.glsl",
+			"sourceGroupIndex" : 125
+		},
+		{
+			"backtrace" : 1,
+			"path" : "shaders/mesh/vert.glsl",
+			"sourceGroupIndex" : 125
+		},
+		{
+			"backtrace" : 1,
+			"path" : "shaders/single_color/frag.glsl",
+			"sourceGroupIndex" : 126
+		},
+		{
+			"backtrace" : 1,
+			"path" : "shaders/single_color/vert.glsl",
+			"sourceGroupIndex" : 126
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/cloth/cloth.cpp",
+			"sourceGroupIndex" : 127
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/cloth/cloth.hpp",
+			"sourceGroupIndex" : 127
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/constraint/constraint.cpp",
+			"sourceGroupIndex" : 128
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/constraint/constraint.hpp",
+			"sourceGroupIndex" : 128
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/environment.cpp",
+			"sourceGroupIndex" : 129
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/environment.hpp",
+			"sourceGroupIndex" : 129
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/main.cpp",
+			"sourceGroupIndex" : 129
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/scene.cpp",
+			"sourceGroupIndex" : 129
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/scene.hpp",
+			"sourceGroupIndex" : 129
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/simulation/simulation.cpp",
+			"sourceGroupIndex" : 130
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/simulation/simulation.hpp",
+			"sourceGroupIndex" : 130
+		}
+	],
+	"type" : "EXECUTABLE"
+}
