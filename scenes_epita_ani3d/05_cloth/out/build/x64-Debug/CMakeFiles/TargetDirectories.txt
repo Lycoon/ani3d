@@ -1,3 +1,0 @@
-C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/scenes_epita_ani3d/05_cloth/out/build/x64-Debug/CMakeFiles/05_cloth.dir
-C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/scenes_epita_ani3d/05_cloth/out/build/x64-Debug/CMakeFiles/edit_cache.dir
-C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/scenes_epita_ani3d/05_cloth/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir

@@ -35,26 +35,24 @@ void apply_deformation(mesh& shape, numarray<vec3> const& position_before_deform
 		{
 			// Hint: You can convert the 2D translation in screen space into a 3D translation in the view plane in multiplying 
 			//       camera_orientation * vec3(translate_screen, 0)
-			vec3 translation = camera_orientation * vec3(translate_screen, 0.0f);
-
-			if (deformer_parameters.direction == direction_surface_normal)
-				translation = n_clicked * translate_screen.y;
+			vec3 const translation = camera_orientation * vec3(translate_screen, 0.0f);
 
 			// Fake deformation (linear translation in the screen space) 
 			//   the following lines should be modified to get the expected smooth deformation
-			p_shape = p_shape_original + std::exp(-pow(dist, 2) / r) * translation;
+			if (dist < r)
+				p_shape = p_shape_original + (1 - dist / r) * translation;
+
 		}
 		if (deformer_parameters.type == deform_twist)
 		{
-			if (deformer_parameters.direction == direction_surface_normal)
-			{
-				auto rotation = rotation_around_center(rotation_transform::from_axis_angle(n_clicked, translate_screen.x * std::exp(-pow(dist, 2) / r)), p_clicked);
-				p_shape = rotation * p_shape_original;
-			}
+			// Deformation to implement
 		}
 		if (deformer_parameters.type == deform_scale)
 		{
 			// Deformation to implement"
 		}
+
 	}
+
+
 }

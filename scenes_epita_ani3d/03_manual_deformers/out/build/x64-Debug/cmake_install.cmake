@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/scenes_epita_ani3d/03_manual_deformers
+# Install script for directory: C:/Users/Hugo/Documents/Development/code_epita_ani3d/scenes_epita_ani3d/03_manual_deformers
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/scenes_epita_ani3d/03_manual_deformers/out/install/x64-Debug")
+  set(CMAKE_INSTALL_PREFIX "C:/Users/Hugo/Documents/Development/code_epita_ani3d/scenes_epita_ani3d/03_manual_deformers/out/install/x64-Debug")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Hugo/Documents/EPITA/ANI3D/code_epita_ani3d/scenes_epita_ani3d/03_manual_deformers/out/build/x64-Debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Hugo/Documents/Development/code_epita_ani3d/scenes_epita_ani3d/03_manual_deformers/out/build/x64-Debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

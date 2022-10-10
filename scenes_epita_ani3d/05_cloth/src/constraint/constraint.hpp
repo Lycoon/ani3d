@@ -28,4 +28,5 @@ struct constraint_structure
 	void add_fixed_position(int ku, int kv, cloth_structure const& cloth);
 	// Remove a fixed position
 	void remove_fixed_position(int ku, int kv);
+
 };

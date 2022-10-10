@@ -39,40 +39,10 @@ void simulation_compute_force(cloth_structure& cloth, simulation_parameters cons
             force(ku, kv) += -mu * m * velocity(ku, kv);
 
 
-    // Spring forces
-    const vec2 offsets[] = {
-        {-1, 0}, {0, 1}, {1, 0}, {0, -1},   // structural
-        {-1, 1}, {1, 1}, {1, -1}, {-1, -1}, // shearing
-        {-2, 0}, {0, 2}, {2, 0}, {0, -2}    // bending
-    };
-
-    for (int ku = 0; ku < N_edge; ++ku)
-    {
-        for (int kv = 0; kv < N_edge; ++kv)
-        {
-            cgp::vec3 springForces = { 0, 0, 0 };
-            cgp::vec3 pos = cloth.position(ku, kv);
-            for (const vec2& off : offsets)
-            {
-                if (ku + off.x < 0 || kv + off.y < 0 || ku + off.x >= N_edge || kv + off.y >= N_edge)
-                    continue;
-
-                cgp::vec3 p = cloth.position(ku + off.x, kv + off.y);
-                const auto dist = norm(p - pos);
-                springForces += K * (dist - L0 * norm(off)) * ((p - pos) / dist);
-            }
-            force(ku, kv) += springForces;
-        }
-    }
-
-    // Wind force
-    for (int ku = 0; ku < N_edge; ++ku)
-    {
-        for (int kv = 0; kv < N_edge; ++kv)
-        {
-            auto pos = cloth.position(ku, kv);
-            auto normal = cloth.normal(ku, kv);
-            force(ku, kv) += dot(normal, parameters.wind.direction) * normal * parameters.wind.magnitude;
+    // TO DO: Add spring forces ...
+    for (int ku = 0; ku < N_edge; ++ku) {
+        for (int kv = 0; kv < N_edge; ++kv) {
+            // ...
         }
     }
 }
@@ -108,16 +78,6 @@ void simulation_apply_constraints(cloth_structure& cloth, constraint_structure c
     // For all vertex:
     //   If vertex is below floor level ...
     //   If vertex is inside collision sphere ...
-
-    const float ground = constraint.ground_z;
-    const int edges = cloth.N_samples_edge();
-    for (int ku = 0; ku < edges; ku++)
-    {
-        for (int kv = 0; kv < edges; kv++)
-        {
-            auto pos = cloth.position(ku, kv);
-        }
-    }
 }
 
 

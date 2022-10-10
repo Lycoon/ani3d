@@ -9,11 +9,9 @@ using cgp::vec3;
 
 
 struct gui_parameters {
-	bool display_frame = true;
+	bool display_frame     = true;
 
 	bool is_full_screen = false;
-
-	bool display_wireframe = false;
 };
 
 
@@ -38,10 +36,7 @@ struct scene_structure {
 	mesh_drawable cube; 
 	mesh_drawable ground;
 	mesh_drawable sphere;
-	mesh_drawable camel;
-	std::vector<vec3> cone_positions;
-	mesh_drawable cone;
-	mesh_drawable trunk;
+
 
 
 	
