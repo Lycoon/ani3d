@@ -115,7 +115,10 @@ void initialize_default_shaders()
 	mesh_drawable::default_shader.load("shaders/mesh/vert.glsl", "shaders/mesh/frag.glsl");
 	// Set default white texture
 	image_structure const white_image = image_structure{ 1,1,image_color_type::rgba,{255,255,255,255} };
-	mesh_drawable::default_texture.initialize_texture_2d_on_gpu(white_image);
+	image_structure const feather_texture = image_load_file("assets/feathers_ao.png");
+	
+	mesh_drawable::default_texture.initialize_texture_2d_on_gpu(feather_texture);
+	//mesh_drawable::default_texture.initialize_texture_2d_on_gpu(white_image);
 
 	// Set standard uniform color for curve/segment_drawable
 	curve_drawable::default_shader.load("shaders/single_color/vert.glsl", "shaders/single_color/frag.glsl");
