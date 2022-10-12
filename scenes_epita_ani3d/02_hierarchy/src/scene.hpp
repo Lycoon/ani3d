@@ -35,7 +35,11 @@ struct scene_structure : cgp::scene_inputs_generic {
 	cgp::hierarchy_mesh_drawable hierarchy;
 
 	// Flappy Bird
-	float bird_speed_y = 10;
+	float gravity = -25;
+	float minSpeed = -30;
+	float maxSpeed = 15;
+
+	float bird_speed_y = 3;
 	float prevDeltaTime = 0;
 
 	// ****************************** //

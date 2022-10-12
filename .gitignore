@@ -1,4 +1,4 @@
 *.ilk
 *.pdb
-.vs
-out
+.vs/
+out/

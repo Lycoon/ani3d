@@ -19,7 +19,7 @@ scene_structure scene;
 // Start of the program
 // *************************** //
 
-window_structure standard_window_initialization(int width = 0, int height = 0);
+window_structure standard_window_initialization(int width = 533, int height = 800);
 void initialize_default_shaders();
 
 int main(int, char* argv[])
@@ -63,7 +63,7 @@ int main(int, char* argv[])
 
 		float const time_interval = fps_record.update();
 		if (fps_record.event) {
-			std::string const title = "CGP Display - " + str(fps_record.fps) + " fps";
+			std::string const title = "Flappy Bird - " + str(fps_record.fps) + " fps";
 			glfwSetWindowTitle(scene.window.glfw_window, title.c_str());
 		}
 
@@ -114,11 +114,11 @@ void initialize_default_shaders()
 	// Set standard mesh shader for mesh_drawable
 	mesh_drawable::default_shader.load("shaders/mesh/vert.glsl", "shaders/mesh/frag.glsl");
 	// Set default white texture
-	image_structure const white_image = image_structure{ 1,1,image_color_type::rgba,{255,255,255,255} };
-	image_structure const feather_texture = image_load_file("assets/feathers_ao.png");
+	image_structure const white_image = image_structure{ 1,1,image_color_type::rgba,{255,255, 255,255} };
+	//image_structure const feather_texture = image_load_file("assets/feathers_ao.png");
 	
-	mesh_drawable::default_texture.initialize_texture_2d_on_gpu(feather_texture);
-	//mesh_drawable::default_texture.initialize_texture_2d_on_gpu(white_image);
+	//mesh_drawable::default_texture.initialize_texture_2d_on_gpu(feather_texture);
+	mesh_drawable::default_texture.initialize_texture_2d_on_gpu(white_image);
 
 	// Set standard uniform color for curve/segment_drawable
 	curve_drawable::default_shader.load("shaders/single_color/vert.glsl", "shaders/single_color/frag.glsl");
@@ -198,7 +198,11 @@ void mouse_click_callback(GLFWwindow* /*window*/, int button, int action, int /*
 	scene.inputs.mouse.click.update_from_glfw_click(button, action);
 	scene.mouse_click_event();
 
-	scene.bird_speed_y = 10;
+	if (action != GLFW_RELEASE)
+	{
+		// Make the bird jump only on click, not release
+		scene.bird_speed_y = 15;
+	}
 }
 
 // This function is called everytime the mouse is scrolled
