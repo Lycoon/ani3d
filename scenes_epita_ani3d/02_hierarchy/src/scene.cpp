@@ -2,7 +2,7 @@
 
 
 using namespace cgp;
-
+const char* tubeNames[3] = {"Tube A1", "Tube B1", "Tube C1"};
 
 void scene_structure::initialize()
 {
@@ -31,6 +31,7 @@ void scene_structure::initialize()
 	mesh_drawable eye;
 	mesh_drawable tube;
 	mesh_drawable tube_top;
+	mesh_drawable ground;
 
 	// Create the geometry of the meshes
 	//   Note: this geometry must be set in their local coordinates with respect to their position in the hierarchy (and with respect to their animation)
@@ -47,8 +48,9 @@ void scene_structure::initialize()
 	wing_up.initialize_data_on_gpu(mesh_primitive_quadrangle({ -0.3f, 0, 0 }, { 0.3f, 0, 0 }, { 0.3f, 0.4f, 0 }, { -0.3f, 0.4f, 0}));
 	wing_low.initialize_data_on_gpu(mesh_primitive_quadrangle({ -0.3f, 0, 0 }, { 0.3f, 0, 0 }, { 0.15f, 0.25f, 0 }, { -0.15f, 0.25f, 0 }));
 	eye.initialize_data_on_gpu(mesh_primitive_disc(0.05f));
-	tube.initialize_data_on_gpu(mesh_primitive_cylinder(1, {0, 0, 0}, {0, 0, 5.5f}, 10, 20, true));
+	tube.initialize_data_on_gpu(mesh_primitive_cylinder(1, {0, 0, 0}, {0, 0, 12.0f}, 10, 20, true));
 	tube_top.initialize_data_on_gpu(mesh_primitive_cylinder(1.2f, { 0, 0, 0 }, { 0, 0, 0.6f }, 10, 20, true));
+	ground.initialize_data_on_gpu(mesh_primitive_quadrangle({ -50.0f, 0, 0 }, { 50.0f, 0, 0 }, { 50.0f, 20.0f, 0 }, { -50.0f, 20.0f, 0 }));
 
 	// Set the color of some elements
 	vec3 color1 = { 0.8f, 0.5f, 0.7f };
@@ -57,6 +59,7 @@ void scene_structure::initialize()
 	vec3 orange = { 1.0f, 0.3f, 0.0f };
 	vec3 black = { 0.0f, 0.0f, 0.0f };
 	vec3 green = { 0.5f, 1.0f, 0.0f };
+	vec3 brown = { 0.87f, 0.72f, 0.53f };
 
 	cylinder1.material.color = color1;
 	cube1.material.color = color1;
@@ -71,6 +74,10 @@ void scene_structure::initialize()
 	eye.material.color = black;
 	tube.material.color = green;
 	tube_top.material.color = green;
+
+	ground.material.phong.specular = 0;
+	ground.material.phong.diffuse = 1;
+	ground.material.color = brown;
 
 	// Add the elements in the hierarchy
 	//   The syntax is hierarchy.add(mesh_drawable, "name of the parent element", [optional: local translation in the hierarchy])
@@ -87,8 +94,6 @@ void scene_structure::initialize()
 	hierarchy.add(yellow_cylinder, "Yellow cylinder 2", "Cylinder 1 son", { 0, 0, -0.25f });*/
 
 	// Bird
-	hierarchy.add(tube, "Tube 1");
-	hierarchy.add(tube_top, "Tube 1 top", "Tube 1", { 0, 0, 5.5f });
 	hierarchy.add(bird_body, "Bird body");
 	hierarchy.add(bird_head, "Bird head", "Bird body", { 0.45f, 0, 0.3f });
 	hierarchy.add(bird_nose, "Bird nose", "Bird head", { 0.12f, 0, 0 }, rotation_transform::from_axis_angle({0,1,0}, 1.571f));
@@ -96,12 +101,45 @@ void scene_structure::initialize()
 	hierarchy.add(wing_up, "Bird up right wing", "Bird body");
 	hierarchy.add(wing_low, "Bird low left wing", "Bird up left wing", {0, 0.4f, 0});
 	hierarchy.add(wing_low, "Bird low right wing", "Bird up right wing", { 0, 0.4f, 0 });
+	hierarchy["Bird body"].transform_local.translation.z = 3.0f;
+	hierarchy["Bird body"].transform_local.scaling = 2.0f;
+
+	// Tubes
+	hierarchy.add(tube, "Tube A1");
+	hierarchy.add(tube_top, "Tube A1 hat", "Tube A1", { 0, 0, 12.0f });
+	hierarchy.add(tube, "Tube A2", "Tube A1", { 0, 0, 32.5f /* hole between tubes */ });
+	hierarchy.add(tube_top, "Tube A2 hat", "Tube A2", { 0, 0, 12.0f });
+	hierarchy["Tube A2"].transform_local.rotation = rotation_transform::from_axis_angle({ 0, 1, 0 }, Pi);
+	hierarchy["Tube A1"].transform_local.translation.z = -17.0f; // hole height
+	hierarchy["Tube A1"].transform_local.translation.x = 100.0f; // first tubes spawn on the left out of frame
+
+	hierarchy.add(tube, "Tube B1");
+	hierarchy.add(tube_top, "Tube B1 hat", "Tube B1", { 0, 0, 12.0f });
+	hierarchy.add(tube, "Tube B2", "Tube B1", { 0, 0, 32.5f });
+	hierarchy.add(tube_top, "Tube B2 hat", "Tube B2", { 0, 0, 12.0f });
+	hierarchy["Tube B2"].transform_local.rotation = rotation_transform::from_axis_angle({ 0, 1, 0 }, Pi);
+	hierarchy["Tube B1"].transform_local.translation.x = 100.0f;
+
+	hierarchy.add(tube, "Tube C1");
+	hierarchy.add(tube_top, "Tube C1 hat", "Tube C1", { 0, 0, 12.0f });
+	hierarchy.add(tube, "Tube C2", "Tube C1", { 0, 0, 32.5f });
+	hierarchy.add(tube_top, "Tube C2 hat", "Tube C2", { 0, 0, 12.0f });
+	hierarchy["Tube C2"].transform_local.rotation = rotation_transform::from_axis_angle({ 0, 1, 0 }, Pi);
+	hierarchy["Tube C1"].transform_local.translation.x = 100.0f;
+
+	// Ground
+	hierarchy.add(ground, "Ground");
+	hierarchy["Ground"].transform_local.translation.z = -11.0f;
 
 	// Skyblue color
 	environment.background_color = { 0.53, 0.81, 0.92 };
 }
 
 
+float mapRange(float val, float low, float up, float newLow, float newUp)
+{
+	return (val - low) / (up - low) * (newUp - newLow) + newLow;
+}
 
 void scene_structure::display_frame()
 {
@@ -117,14 +155,29 @@ void scene_structure::display_frame()
 	// Update the current time
 	timer.update();
 
+	// Update bird physics
 	if (bird_speed_y > minSpeed) {
 		bird_speed_y += gravity * deltaTime;
 	}
 
-	//std::cout << deltaTime << std::endl;
+	// Tube spawning
+	lastSpawnedTube += deltaTime;
+	if (lastSpawnedTube > 2.0f)
+	{
+		const char* tubeName = tubeNames[lastTubeId];
+		std::cout << "Spawning tube " << tubeName << std::endl;
+
+		float randY = rand_interval(-20.0f, -9.0f);
+		hierarchy[tubeName].transform_local.translation.z = randY;
+		hierarchy[tubeName].transform_local.translation.x = 10.0f;
+
+		lastSpawnedTube = 0;
+		lastTubeId = (++lastTubeId) % 3;
+	}
+
 	float normMaxSpeed = 1;
 	float normMinSpeed = -1;
-	float norm = (bird_speed_y - minSpeed) / (maxSpeed - minSpeed) * (normMaxSpeed - normMinSpeed) + normMinSpeed;
+	float norm = mapRange(bird_speed_y, minSpeed, maxSpeed, normMinSpeed, normMaxSpeed);
 
 	// Apply transformation to some elements of the hierarchy
 	/*hierarchy["Cylinder 1"].transform_local.rotation = rotation_transform::from_axis_angle({0,0,1}, timer.t);
@@ -144,8 +197,10 @@ void scene_structure::display_frame()
 	hierarchy["Bird head"].transform_local.rotation = rotation_transform::from_axis_angle({ 0,1,0 }, cos(2 * timer.t) / 4);
 
 	// Tubes
-	hierarchy["Tube 1"].transform_local.translation.z = -8.0f;
-	hierarchy["Tube 1"].transform_local.translation.x -= 0.03f;
+	float tubeSpeed = 0.035f;
+	hierarchy["Tube A1"].transform_local.translation.x -= tubeSpeed;
+	hierarchy["Tube B1"].transform_local.translation.x -= tubeSpeed;
+	hierarchy["Tube C1"].transform_local.translation.x -= tubeSpeed;
 
 	// This function must be called before the drawing in order to propagate the deformations through the hierarchy
 	hierarchy.update_local_to_global_coordinates();

@@ -39,7 +39,9 @@ struct scene_structure : cgp::scene_inputs_generic {
 	float minSpeed = -30;
 	float maxSpeed = 15;
 
-	float bird_speed_y = 3;
+	unsigned int lastTubeId = 0;
+	float lastSpawnedTube = 0;
+	float bird_speed_y = 15;
 	float prevDeltaTime = 0;
 
 	// ****************************** //

@@ -195,13 +195,14 @@ void mouse_move_callback(GLFWwindow* /*window*/, double xpos, double ypos)
 // This function is called everytime a mouse button is clicked/released
 void mouse_click_callback(GLFWwindow* /*window*/, int button, int action, int /*mods*/)
 {
-	scene.inputs.mouse.click.update_from_glfw_click(button, action);
-	scene.mouse_click_event();
+	// Commenting following line to disable camera motion
+	//scene.inputs.mouse.click.update_from_glfw_click(button, action);
 
+	scene.mouse_click_event();
 	if (action != GLFW_RELEASE)
 	{
 		// Make the bird jump only on click, not release
-		scene.bird_speed_y = 15;
+		scene.bird_speed_y = 12;
 	}
 }
 
