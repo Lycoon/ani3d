@@ -197,6 +197,8 @@ void mouse_click_callback(GLFWwindow* /*window*/, int button, int action, int /*
 {
 	scene.inputs.mouse.click.update_from_glfw_click(button, action);
 	scene.mouse_click_event();
+
+	scene.bird_speed_y = 10;
 }
 
 // This function is called everytime the mouse is scrolled
@@ -220,6 +222,14 @@ void keyboard_callback(GLFWwindow* /*window*/, int key, int, int action, int /*m
 		else
 			scene.window.set_windowed_screen();
 	}
+
+	// Flappy Bird jump
+	/*if (key == GLFW_KEY_SPACE)
+	{
+		std::cout << "SPACE" << std::endl;
+		scene.bird_speed_y = 1;
+	}*/
+
 	// Press 'V' for camera frame/view matrix debug
 	if (key == GLFW_KEY_V && action == GLFW_PRESS && scene.inputs.keyboard.shift) {
 		auto const camera_model = scene.camera_control.camera_model;

@@ -27,10 +27,6 @@ struct scene_structure : cgp::scene_inputs_generic {
 	environment_structure environment;   // Standard environment controler
 	input_devices inputs;                // Storage for inputs status (mouse, keyboard, window dimension)
 	gui_parameters gui;                  // Standard GUI element storage
-	
-	// ****************************** //
-	// Elements and shapes of the scene
-	// ****************************** //
 
 	// Timer used for the animation
 	cgp::timer_basic timer;
@@ -38,6 +34,9 @@ struct scene_structure : cgp::scene_inputs_generic {
 	// The entire hierarchy
 	cgp::hierarchy_mesh_drawable hierarchy;
 
+	// Flappy Bird
+	float bird_speed_y = 10;
+	float prevDeltaTime = 0;
 
 	// ****************************** //
 	// Functions

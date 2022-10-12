@@ -8,7 +8,7 @@ void scene_structure::initialize()
 {
 	camera_control.initialize(inputs, window); // Give access to the inputs and window global state to the camera controler
 	camera_control.set_rotation_axis_z();
-	camera_control.look_at({ 3.0f, 2.0f, 2.0f }, {0,0,0}, {0,0,1});
+	camera_control.look_at({ 0.0f, 30.0f, 0.0f }, {0,0,0}, {0,0,1});
 	global_frame.initialize_data_on_gpu(mesh_primitive_frame());
 
 
@@ -93,6 +93,9 @@ void scene_structure::initialize()
 
 void scene_structure::display_frame()
 {
+	float deltaTime = timer.t - prevDeltaTime;
+	prevDeltaTime = timer.t;
+
 	// Set the light to the current position of the camera
 	environment.light = camera_control.camera_model.position();
 	
@@ -102,14 +105,25 @@ void scene_structure::display_frame()
 	// Update the current time
 	timer.update();
 
-	
+	float gravity = -2;
+	if (bird_speed_y > -25) {
+		bird_speed_y += gravity * deltaTime;
+	}
+
+	//std::cout << deltaTime << std::endl;
+	std::cout << "bird_speed_y: " << bird_speed_y << ", pos_y: " << hierarchy["Bird body"].transform_local.translation.z << std::endl;
+	//float norm = (bird_speed_y - 1) / 2;
 	// Apply transformation to some elements of the hierarchy
 	/*hierarchy["Cylinder 1"].transform_local.rotation = rotation_transform::from_axis_angle({0,0,1}, timer.t);
 	hierarchy["Cube base"].transform_local.rotation = rotation_transform::from_axis_angle({ 1,0,0 }, cos(timer.t));
 	hierarchy["Cube 1"].transform_local.rotation = rotation_transform::from_axis_angle({1,0,0}, -3 * timer.t);
 	hierarchy["Cylinder 1 son"].transform_local.rotation = rotation_transform::from_axis_angle({ 0,0,1 }, 8 * timer.t);*/
 
-	// Bird
+	// Bird physics
+	hierarchy["Bird body"].transform_local.translation += {0, 0, bird_speed_y * deltaTime};
+	//hierarchy["Bird body"].transform_local.rotation = rotation_transform::from_axis_angle({ 0, 1, 0 }, norm);
+
+	// Bird animations
 	hierarchy["Bird up left wing"].transform_local.rotation = rotation_transform::from_axis_angle({ 1,0,0 }, -cos(7 * timer.t) / 2);
 	hierarchy["Bird low left wing"].transform_local.rotation = rotation_transform::from_axis_angle({ 1,0,0 }, -cos(7 * timer.t));
 	hierarchy["Bird up right wing"].transform_local.rotation = rotation_transform::from_axis_angle({ 1,0,0 }, cos(7 * timer.t) / 2) * rotation_transform::from_axis_angle({ 1,0,0 }, Pi);
