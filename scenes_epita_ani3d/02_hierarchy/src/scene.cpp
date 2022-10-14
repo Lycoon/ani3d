@@ -148,9 +148,6 @@ void scene_structure::display_frame()
 
 	// Set the light to the current position of the camera
 	environment.light = camera_control.camera_model.position();
-	
-	if (gui.display_frame)
-		draw(global_frame, environment);
 
 	// Update the current time
 	timer.update();

@@ -67,15 +67,15 @@ int main(int, char* argv[])
 			glfwSetWindowTitle(scene.window.glfw_window, title.c_str());
 		}
 
-		imgui_create_frame();
-		ImGui::Begin("GUI", NULL, ImGuiWindowFlags_AlwaysAutoResize);
+		//imgui_create_frame();
+		//ImGui::Begin("GUI", NULL, ImGuiWindowFlags_AlwaysAutoResize);
 		scene.inputs.mouse.on_gui = ImGui::GetIO().WantCaptureMouse;
 		scene.inputs.time_interval = time_interval;
 
 
 
 		// Display the ImGUI interface (button, sliders, etc)
-		scene.display_gui();
+		//scene.display_gui();
 
 		// Handle camera behavior in standard frame
 		scene.idle_frame();
@@ -85,8 +85,8 @@ int main(int, char* argv[])
 
 
 		// End of ImGui display and handle GLFW events
-		ImGui::End();
-		imgui_render_frame(scene.window.glfw_window);
+		//ImGui::End();
+		//imgui_render_frame(scene.window.glfw_window);
 		glfwSwapBuffers(scene.window.glfw_window);
 		glfwPollEvents();
 	}
@@ -227,13 +227,6 @@ void keyboard_callback(GLFWwindow* /*window*/, int key, int, int action, int /*m
 		else
 			scene.window.set_windowed_screen();
 	}
-
-	// Flappy Bird jump
-	/*if (key == GLFW_KEY_SPACE)
-	{
-		std::cout << "SPACE" << std::endl;
-		scene.bird_speed_y = 1;
-	}*/
 
 	// Press 'V' for camera frame/view matrix debug
 	if (key == GLFW_KEY_V && action == GLFW_PRESS && scene.inputs.keyboard.shift) {
